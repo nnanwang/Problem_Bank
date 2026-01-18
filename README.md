@@ -1,4 +1,52 @@
+# 🧊 TauRunner — Student Quick Start (Docker)
+
+This guide explains how to **run TauRunner using Docker**.  
+You **do not** need to install PROPOSAL, CMake, or any compilers on your computer.
+
+> ✔ Works on macOS (Intel & Apple Silicon), Windows, and Linux  
+> ✔ Everyone runs the exact same environment
+
+---
+
+## 0. Prerequisites
+
+You only need **Docker**.
+download link: https://www.docker.com/get-started/ <br>
+<img width="1840" height="1222" alt="image" src="https://github.com/user-attachments/assets/a4dc066c-abf1-4eab-ad4e-85c7f46ee927" />
+
+Check that Docker is installed:
+
+```bash
+docker --version
+```
+## 1. Download taurunner_py310.tar
+
+
+## 2. run taurunner_py310.tar with Docker
+```
+docker load -i taurunner_py310.tar
+```
+```
+docker run --rm -it taurunner:py310
+```
+## 3. run taurunner
+run container
+```
+docker run --rm -it --platform linux/amd64 taurunner:py310
+```
+If successful, you will see a prompt like:
+```
+root@xxxx:/opt/src#
+```
+example of running TauRunner: Show help
+```
+python -m taurunner.main --help
+```
+
+previous version (
+----------------------------------------------------------------------
 # Taurunner Installation Guide 
+
 
 This repository documents a **stable, classroom-tested installation workflow** for running **Taurunner** with **PROPOSAL** on macOS.
 
